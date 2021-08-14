@@ -2,7 +2,6 @@
   "name": "1day1pic",
   "version": "1.0.0",
   "description": "1 Day 1 Picutre for memory",
-  "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node index.js"
   },
@@ -16,5 +15,6 @@
     "@babel/node": "^7.14.9",
     "@babel/preset-env": "^7.15.0",
     "nodemon": "^2.0.12"
-  }
+  },
+  "type": "module"
 }

@@ -1,7 +1,9 @@
 extends layout.pug
 
 block content 
-    form(method="POST")
+    form(method="POST" enctype="multipart/form-data")
+        label(for="pic")
+        input(type="file", name="pic", accept="image/*") 
         input(name="title", type="text", required, placeholder="Title") 
         input(name="description", type="text", required, placeholder="Description") 
         input(type="submit", value="Upload") 

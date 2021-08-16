@@ -1,0 +1,5 @@
+mixin picture(picture)
+    a(href="/pic/" + picture._id)
+        img(src="/" + picture.picUrl)
+        li
+            span=picture.title

@@ -1,4 +1,9 @@
 extends layout.pug
+include mixins/picture
 
 block content 
-    h1 home
+    ul
+        each picture in pictures
+            +picture (picture)
+        else 
+            span No pictures
